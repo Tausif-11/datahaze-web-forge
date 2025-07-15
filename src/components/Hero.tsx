@@ -11,6 +11,13 @@ const Hero = () => {
     { label: 'Updates', value: 'Real-time', icon: Zap },
   ];
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative pt-24 pb-16 overflow-hidden">
       {/* Background Effects */}
@@ -38,6 +45,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-slide-up">
             <Button 
               size="lg" 
+              onClick={() => scrollToSection('categories')}
               className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:shadow-purple-500/25 transition-all duration-300 transform hover:scale-105"
             >
               Start Exploring
@@ -46,6 +54,7 @@ const Hero = () => {
             <Button 
               variant="outline" 
               size="lg"
+              onClick={() => window.location.href = '/about'}
               className="glass border-white/20 text-white hover:bg-white/10 px-8 py-3 rounded-lg font-semibold"
             >
               Learn More
