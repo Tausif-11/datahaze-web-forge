@@ -1,73 +1,136 @@
-# Welcome to your Lovable project
 
-## Project info
+# DataHaze - Knowledge Without Limits
 
-**URL**: https://lovable.dev/projects/febefec1-dcf7-42d6-b474-6ac7022da384
+A beautiful, modern Wikipedia-like knowledge platform built with React, TypeScript, and Tailwind CSS.
 
-## How can I edit this code?
+## 🚀 Features
 
-There are several ways of editing your application.
+- **Modern Dark UI**: Glassmorphism design with gradient backgrounds
+- **Responsive Design**: Works perfectly on all devices
+- **Category System**: Organized knowledge across 12+ categories
+- **Real-time Updates**: Stay current with the latest discoveries
+- **Search Functionality**: Find any topic instantly
+- **Smooth Animations**: Engaging micro-interactions and transitions
+- **SEO Optimized**: Structured data and meta tags for better search visibility
 
-**Use Lovable**
+## 🎨 Design System
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/febefec1-dcf7-42d6-b474-6ac7022da384) and start prompting.
+- **Color Palette**: Deep purple to blue gradients with glassmorphism effects
+- **Typography**: Clean, readable fonts with proper hierarchy
+- **Components**: Reusable UI components with consistent styling
+- **Animations**: Subtle hover effects and smooth transitions
 
-Changes made via Lovable will be committed automatically to this repo.
+## 📁 Project Structure
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+src/
+├── components/
+│   ├── Navbar.tsx          # Navigation with search
+│   ├── Hero.tsx            # Landing page hero section
+│   ├── CategoryGrid.tsx    # Knowledge categories
+│   ├── RecentUpdates.tsx   # Latest articles and updates
+│   ├── Footer.tsx          # Site footer
+│   └── LoadingSpinner.tsx  # Loading animation
+├── pages/
+│   ├── Index.tsx           # Main homepage
+│   └── NotFound.tsx        # 404 error page
+├── components/ui/          # Shadcn UI components
+└── index.css               # Global styles and design system
 ```
 
-**Edit a file directly in GitHub**
+## 🛠️ Tech Stack
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- **React 18** - Modern React with hooks
+- **TypeScript** - Type safety and better development experience
+- **Tailwind CSS** - Utility-first styling with custom design system
+- **Vite** - Fast build tool and development server
+- **Lucide React** - Beautiful icons
+- **Shadcn/ui** - High-quality component library
 
-**Use GitHub Codespaces**
+## 🚀 Getting Started
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. **Clone the repository**
+   ```bash
+   git clone <your-repo-url>
+   cd datahaze
+   ```
 
-## What technologies are used for this project?
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-This project is built with:
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
 
-## How can I deploy this project?
+## 📝 TODO / Future Enhancements
 
-Simply open [Lovable](https://lovable.dev/projects/febefec1-dcf7-42d6-b474-6ac7022da384) and click on Share -> Publish.
+- [ ] Add font selector functionality
+- [ ] Implement language switcher
+- [ ] Add user authentication system
+- [ ] Create article editor for contributors
+- [ ] Add bookmark and favorites system
+- [ ] Implement advanced search filters
+- [ ] Add dark/light mode toggle
+- [ ] Create mobile app version
+- [ ] Add offline reading capability
+- [ ] Implement real-time collaboration
+- [ ] Add content management system
+- [ ] Create API for third-party integrations
 
-## Can I connect a custom domain to my Lovable project?
+## 🎯 Categories Covered
 
-Yes, you can!
+- Science & Technology
+- History & Archaeology
+- Society & Culture
+- Current Events
+- Geography & Climate
+- Technology & Innovation
+- Arts & Literature
+- Education & Learning
+- Sports & Recreation
+- Entertainment & Media
+- Medicine & Health
+- Space & Astronomy
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🌐 Deployment
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+### Vercel (Recommended)
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Deploy with zero configuration
+
+### Manual Build
+```bash
+npm run build
+# Upload dist/ folder to your hosting provider
+```
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🙏 Acknowledgments
+
+- Inspired by Wikipedia's mission to democratize knowledge
+- Design influenced by modern dark UI trends
+- Built with love for the open-source community
+
+---
+
+**DataHaze** - Bringing the world's knowledge to your fingertips with style and elegance.
