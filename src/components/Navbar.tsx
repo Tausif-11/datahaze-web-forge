@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Search, Menu, X, Globe, Book, Users, Calendar, Zap } from 'lucide-react';
+import { Search, Menu, X, Globe, Book, Users, Calendar, Zap, FileText } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useSearch } from '@/hooks/useSearch';
@@ -13,6 +13,7 @@ const Navbar = () => {
   const navItems = [
     { name: 'Home', href: '/', icon: Globe },
     { name: 'Explore', href: '/explore', icon: Book },
+    { name: 'Articles', href: '/articles', icon: FileText },
     { name: 'About', href: '/about', icon: Users },
     { name: 'Events', href: '/events', icon: Calendar },
   ];
@@ -64,7 +65,7 @@ const Navbar = () => {
                 {searchResults.slice(0, 5).map((result) => (
                   <a
                     key={`${result.type}-${result.id}`}
-                    href={`/${result.type}/${result.slug}`}
+                    href={result.type === 'article' ? `/articles/${result.slug}` : `/${result.type}/${result.slug}`}
                     className="block px-4 py-3 hover:bg-white/10 transition-colors border-b border-white/5 last:border-b-0"
                   >
                     <div className="flex items-center justify-between">

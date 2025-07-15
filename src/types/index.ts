@@ -20,6 +20,10 @@ export interface Article {
   tags: string[];
   featured: boolean;
   slug: string;
+  author: string;
+  heroImage: string;
+  content: string;
+  publishDate: string;
 }
 
 export interface Event {
